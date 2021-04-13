@@ -1,0 +1,12 @@
+{
+    "type": "service_account",
+    "project_id": "comiagroplataform",
+    "private_key_id": "03a00cab7f0f051b3e4b6ff33bf1c72cdfeba6aa",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1jcTV96Co/+01\nxFC6c1pZtJJU6RnBlb4wt5xMU2nC3uIJOgUZfeAXvmo6f1Wk4DaLRlk7tBevxOK7\nFnZJyInqtjrhutzYb6OqXGidXWVnJ9KeQNimZoVIAWCk+cS9pGV6Lc5w+nKmW44A\nf4gzVu8BwS4b9Vdg0DY66jdQ35QqzOj5r1q6Qv2WffI+m+kLqm1sKi0QaCBsLYLN\ngzf+hNVgbkCvrxdEMga5H4C35Y1PeMZvEX5KJIIrvuficoIsFqX63f1wl6SHVWhF\nJLqNxORk/hGf6YB13MKBQe8c5P9aVHcsIFEjT0909vMFvdxvsqC8VynFXcqndnjD\nN9sGhI8XAgMBAAECggEAAeR5kSHml5fEVWFbMZTBgjmViU6KBM2f5AbYnFczXHXB\n7shbAxjp0PxM4zI2+mJ/n8PhN8Z94qC6HMzv84p5rlw+e2UbpKXKVQ5tEpBfMFj2\ngneu9GjpovPsXhkH7coX1Hrok/nRxlPSojx+4xq8iU4+8kDtnUyGJLloAAzva9e1\neNlD7+L2u2Yn6f0qupbPpACsW2EoAcxhtpJi06+aYfANRbIkBhNOJkZiT9iNOw4C\nYB6rKLraVqorU7h0cZKkl9acbiM8aPHJTPuZxyQW+FPic1/8ZOoae7GM71baj22o\ndjn6itT0oK2HCNhUxJ8xayFpe8CAdJOglZaenIjFqQKBgQDYc+E6FpFXHiQC0uUk\naX5p2mrC2XmibyhwKU17R2ONy2ts8XzI/8RYyzm15gwltoRLNSTbIrJg5Mc0/Zi9\n3ASyInI66gZbOPeqzwn2GSUGCOZAGxLrGszIvaPP+oylmfpIg4TQJStL/uQ55/2k\nCmnyzuTsZXarVwxJ6Si74YgeaQKBgQDWuZFCPxW6OGE4mCo8GpbeosfUDdWm7k4g\nLbbGyRTJpHZa44lN3Z5hvoOYWATcucErHxW/8m6+g8WoYmHQcaOgNxHeLxIS/05l\neNTPbZdv4Wqwe3GNnouT2EyDjiHcF4SKJW8eEx5TCN/t076kOJzzfaebApT/dP3T\n4FL1JCSRfwKBgQCfzcXt/fVl7THHB+722A/llMUXgDomK40eac/zgTxF1nZEY3Gu\nb+6FY90Cp4o2Wa8IW38Pbmll0eIlBEm9em/ZGEdfqaHxvXhUmjCPifbkorNjhtmL\nzCh+2EvV4/Ps22aGHNt0VMzHebMD8Xw4nRulkQxAX5SiYU0IUGSreZHmaQKBgDPF\nL/GR9jIcz8vuXBh7rK5m/tjwsPd7c1iszOmmp51qSqLlQ0CD02Drpxy+9AUnwBwe\ndYb+85Z5fNl5Ru4TyAij3mn8XVY5OfSbKmwMlzuBVNDSInGrrSlrOB9r0FwZS3pn\nRiAxKdmJRTw5FjjP8X9/Zz6nY7cnxN8lsbqrCSoPAoGBAM9VOvlF9EnrQg8UKquQ\nA1blFVhspgBHRf3kuU4ieDsBk3ZTl7n5NZOrh7brn5v36w8J+cBndoA2zwNd7OlG\n4E2Fcko5pSeHQZCn4YfR0kZ5Rag1sB95hZdQCdqgeBePlH1qQTPfW+YR1OOzPQtd\n45UyWxXale7iKUklpZw25EbT\n-----END PRIVATE KEY-----\n",
+    "client_email": "firebase-adminsdk-oncm7@comiagroplataform.iam.gserviceaccount.com",
+    "client_id": "105103514425295204552",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-oncm7%40comiagroplataform.iam.gserviceaccount.com"
+}

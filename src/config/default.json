@@ -1,0 +1,12 @@
+{
+    "dev": {
+        "PORT": 3000,
+        "URL_FILES":"http://localhost:3001",
+        "URL_NOTIFICATIONS": "http://35.197.32.216:3003"
+    },
+    "production": {
+        "PORT": 3000,
+        "URL_FILES":"http://localhost:3001",
+        "URL_NOTIFICATIONS": "http://localhost:3003"
+    }
+}

@@ -1,0 +1,238 @@
+openapi: '3.0.2'
+info:
+  title: Technical Micro Services Authentication Apicreate
+  version: '1.0.0'
+servers:
+  - url: http://localhost:3000
+  - url: http://35.197.32.216:3000
+tags:
+- name: "Ejemplo"
+  description: "Services Authentication Apps"
+- name: "Users"
+  description: "Service Apps"
+paths:
+  /users/verification:
+    post:
+      tags:
+      - "Users"
+      summary: "verification Email Method"
+      description: "Endpoint verification email"
+      operationId: "Verification Users Email"
+      requestBody:
+        description: Example Json
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Login'
+
+      responses:
+        "200":
+          description: show data
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Success"
+        '400':
+          description: Error
+
+  /users/recovery:
+    post:
+      tags:
+      - "Users"
+      summary: "Recovery Apps micro services"
+      description: "Endpoint Recovery Password"
+      operationId: "resetPassword"
+      requestBody:
+        description: Example Json
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Recovery'
+
+      responses:
+        "200":
+          description: show data
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Success"
+        '400':
+          description: Error
+  
+  /users/preregister:
+    post:
+      tags:
+      - "Users"
+      summary: "Preregister"
+      description: "Precharged data that will works as a flag on the register endpoint"
+      operationId: "Preregister Users"
+      requestBody:
+        description: Example Json
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Preregister'
+
+      responses:
+        "200":
+          description: show data
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Success"
+        '400':
+          description: Error
+  
+  /users/preregisterfiles:
+    post:
+      tags:
+      - "Users"
+      summary: "Preregister Files"
+      description: "Precharged data that will works as a flag on the register endpoint"
+      operationId: "Preregister Users Files"
+      requestBody:
+        description: Optional description in *Markdown*
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              $ref: "#/components/schemas/PreregisterFiles"
+      responses:
+        "200":
+          description: show data
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Success"
+        '400':
+          description: Error
+  
+  /users/register:
+    post:
+      tags:
+      - "Users"
+      summary: "Register"
+      description: "Compare the data that you are writting down with the one precharged on preregister"
+      operationId: "Register Users"
+      requestBody:
+        description: Example Json
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Register'
+
+      responses:
+        "200":
+          description: show data
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Success"
+        '400':
+          description: Error
+
+components:
+  schemas:
+    Recovery:
+      type: object
+      properties:
+        email:
+          type: string
+          example: danielcorralesh@gmail.com
+    
+    Login:
+      type: object
+      properties:
+        email:
+          type: string
+          example: danielcorralesh@gmail.com
+    
+    PreregisterFiles:
+      type: object
+      properties:
+          clients:
+            type: string
+            format: binary
+            required:
+              - "true"
+
+    Preregister:
+      type: object
+      properties:
+        email:
+          type: string
+          example: example@example.com
+        id:
+          type: string
+          example: 123456789
+        name:
+          type: string
+          example: Juan David Loaiza Reyes
+        birthDay:
+          type: string
+          example: New York, Empire state
+        phoneNumber:
+          type: string
+          example: +1000000000
+    
+    Register:
+      type: object
+      properties:
+        email:
+          type: string
+          example: example@example.com
+        id:
+          type: string
+          example: 123456789
+        name:
+          type: string
+          example: Juan David Loaiza Reyes
+        birthDay:
+          type: string
+          example: "2019-07-29"
+        phoneNumber:
+          type: string
+          example: +1000000000
+        password:
+          type: string
+          example: Securepassword123
+        notificationsWhatsapp:
+          type: boolean
+          example: true      
+
+    Success: 
+      properties:
+        info:
+          type: object
+          properties: 
+            status:
+              type: integer  
+              example: 200
+            urlServices:  
+              type: string
+              example: localhost:3000
+            path: 
+              type: string
+              example: /api/endpoint
+            message: 
+              type: string
+              example: 😀 message API                      
+        result: 
+          type: string
+          example: data   
+    Errors:
+      type: object
+      properties:
+        errors:
+          type: object
+          properties:
+            status:
+              type: integer
+              example: 400
+            descriptions:
+              type: array
+              example: ["Format No Soport"]
